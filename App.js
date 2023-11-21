@@ -1,10 +1,10 @@
-import { StyleSheet, Text, View, SafeAreaView, Image, StatusBar } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { StyleSheet, Text, SafeAreaView, StatusBar } from 'react-native';
+import HomeScreen from './screen/home/HomeScreen';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text> Halo</Text>
+      <HomeScreen />
     </SafeAreaView>
   );
 }
@@ -12,6 +12,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: StatusBar.currentHeight,
   },
 });
